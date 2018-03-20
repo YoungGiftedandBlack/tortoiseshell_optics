@@ -41,12 +41,13 @@
     justify-content: center;
   }
 
-  .just_look {
+  .just_look span {
     color: grey;
     font-size: 2rem;
     font-weight: bold;
     line-height: 1.2;
     padding: 1.5rem 5rem;
+    background-color: white;
   }
 
   footer span {
@@ -57,6 +58,22 @@
   .appointments span, .philosophy span {
     padding: 0.5rem 1.25rem;
   }
+
+  .picto_box span {
+    color: grey;
+    text-align: center;
+  }
+
+  .phil_title span, .apps_title span {
+    color: white;
+    padding: 1rem 0rem 1rem 1.25rem;
+  }
+
+  .philosophy span, .appointments span {
+    text-align: left;
+    color: grey;
+  }
+
 /* text css ends here */
 
 /* body css starts here */
@@ -67,12 +84,21 @@
     align-items: center;
   }
 
+/* site_container css starts here */
+  .site_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 960px;
+    position: relative;
+  }
+
 /* header starts here */
 
   header {
     position: fixed;
     background-color: cadetblue;
-    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     width: 960px;
@@ -105,11 +131,40 @@
   background-image: url("../../resources/images/glasses-bg.png");
   background-size: auto 30rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* banner_box starts here */
+
+  .banner_box_1, .banner_box_2 {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .banner_box_1 {
+    padding-top: 1rem;
+    position: relative;
+  }
+
+  .banner_box_2 {
+    position: absolute;
+    right: -2rem;
+    position: absolute;
+    top: 10rem;
+    justify-content: flex-end;
+  }
+
+/* banner_box ends here */
 
 /* just_look starts here */
 
-
+  .just_look {
+    display: flex;
+    justify-content: center;
+  }
 
 /* just_look ends here */
 
@@ -117,30 +172,53 @@
 
 /* pictogram starts here */
 
+  .pictogram {
+    display: flex;
+    width: 960px;
+    margin: 0px;
+    padding: 3rem 0rem;
+    border: 0rem;
+    height: 8rem;
+    align-items: center;
+    justify-content: center;
+  }
+
 /* picto_box starts here */
 
-.picto_box {
-  display: flex;
-  width: 5rem;
-  padding: 3rem;
-  height: 8rem;
-}
+  .picto_box {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+  }
 
 /* picto_box ends here */
 
 /* paper_box starts here */
 
   .paper_box {
-    padding: 3rem;
     height: 8rem;
     width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
 /* paper starts here */
 
   .paper {
     width: 3.5rem;
-    height: 4rem;
+    height: 5rem;
+  }
+
+  .paper img {
+    max-width: 100%;
+    max-height: 100%;
   }
 
 /* paper ends here */
@@ -149,26 +227,52 @@
 
 /* ruler_box starts here */
 
+  .ruler_box {
+    height: 8rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 /* ruler starts here */
 
   .ruler {
-    width: 3.5rem;
-    height: 4rem;
+    width: 4rem;
+    height: auto;
   }
 
+  .ruler img {
+    max-width: 100%;
+    max-height: auto;
+  }
 /* ruler ends here */
 
 /* ruler_box ends here */
 
 /* truck_box starts here */
 
+  .truck_box {
+    height: 8rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 /* truck starts here */
 
   .truck {
-    width: 3.5rem;
-    height: 4rem;
+    width: 4rem;
+    height: auto;
   }
 
+  .truck img {
+    max-width: 100%;
+    max-height: auto;
+  }
 /* truck ends here */
 
 /* truck_box ends here */
@@ -177,17 +281,35 @@
 
 /* philosophy and apps starts here */
 
+  .phil_and_app {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+
 /* philosophy_box starts here */
 
   .philosophy_box {
     width: 35%;
-    padding-left: 2.5%;
+    padding-right: 2.5%;
   }
 
-/* philosophy starts here */
-  .philosophy {
+/* phil_title starts here */
+
+  .phil_title {
+    display: flex;
     width: 10rem;
+    margin-bottom: 1rem;
+    background-color: cadetblue;
+    align-items: center;
   }
+
+/* phil_title ends here */
+
+/* philosophy starts here */
+
 /* philosophy starts here */
 
 /* philosophy_box ends here */
@@ -196,14 +318,22 @@
 
   .appointments_box {
     width: 35%;
-    padding-right: 2.5%;
+    padding-left: 2.5%;
   }
+
+/* apps_title starts here */
+
+  .apps_title {
+    display: flex;
+    width: 10rem;
+    margin-bottom: 1rem;
+    background-color: cadetblue;
+  }
+
+/* apps_title ends here */
 
 /* appointments starts here */
 
-  .appointments {
-    width: 10rem;
-  }
 /* appointments starts here */
 
 /* appointments_box ends here */
@@ -215,15 +345,23 @@
   footer {
     background-color: azure;
     width: 960px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   footer img {
     padding: 4rem 1rem 4rem 4rem;
+    height: 1.5rem;
+    width: auto;
   }
 
 /* footer css ends here */
 
+/* site_container css ends here */
+
 /* body css ends here */
+
 
 /* < px but > px starts here */
 /* < px but > px ends here */
