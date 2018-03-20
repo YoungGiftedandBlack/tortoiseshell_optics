@@ -1,38 +1,226 @@
 /* text css starts here */
+
+/* html ends here */
+
+  html {
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: helvetica;
+  }
+
+/* html ends here */
+
+  header span {
+    color: white;
+    font-family: helvetica;
+    font-size: 1rem;
+  }
+
+  .logo {
+    padding-left: 1rem;
+  }
+
+  .links {
+    padding-right: 2rem;
+  }
+
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a {
+    align-items: center;
+    justify-content: center;
+  }
+
+  header span {
+    color: white;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .just_look {
+    color: grey;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 1.5rem 5rem;
+  }
+
+  footer span {
+    padding: 4rem 0rem;
+    color: grey;
+  }
+
+  .appointments span, .philosophy span {
+    padding: 0.5rem 1.25rem;
+  }
 /* text css ends here */
 
 /* body css starts here */
 
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 /* header starts here */
+
+  header {
+    position: fixed;
+    background-color: cadetblue;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 960px;
+    z-index: 2;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .comp_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header img {
+    height: 1.5rem;
+    width: auto;
+    padding-left: 2rem;
+  }
+
 /* header ends here */
 
 /* banner starts here */
+
+.banner {
+  height: 30rem;
+  background-image: url("../../resources/images/glasses-bg.png");
+  background-size: auto 30rem;
+  width: 100%;
+}
+
+/* just_look starts here */
+
+
+
+/* just_look ends here */
+
 /* banner ends here */
 
 /* pictogram starts here */
 
+/* picto_box starts here */
+
+.picto_box {
+  display: flex;
+  width: 5rem;
+  padding: 3rem;
+  height: 8rem;
+}
+
+/* picto_box ends here */
+
+/* paper_box starts here */
+
+  .paper_box {
+    padding: 3rem;
+    height: 8rem;
+    width: 5rem;
+  }
+
 /* paper starts here */
+
+  .paper {
+    width: 3.5rem;
+    height: 4rem;
+  }
+
 /* paper ends here */
 
+/* paper_box ends here */
+
+/* ruler_box starts here */
+
 /* ruler starts here */
+
+  .ruler {
+    width: 3.5rem;
+    height: 4rem;
+  }
+
 /* ruler ends here */
 
+/* ruler_box ends here */
+
+/* truck_box starts here */
+
 /* truck starts here */
+
+  .truck {
+    width: 3.5rem;
+    height: 4rem;
+  }
+
 /* truck ends here */
+
+/* truck_box ends here */
 
 /* pictogram ends here */
 
 /* philosophy and apps starts here */
 
+/* philosophy_box starts here */
+
+  .philosophy_box {
+    width: 35%;
+    padding-left: 2.5%;
+  }
+
 /* philosophy starts here */
-/* philosophy ends here */
+  .philosophy {
+    width: 10rem;
+  }
+/* philosophy starts here */
+
+/* philosophy_box ends here */
+
+/* appointments_box starts here */
+
+  .appointments_box {
+    width: 35%;
+    padding-right: 2.5%;
+  }
 
 /* appointments starts here */
-/* appointments ends here */
+
+  .appointments {
+    width: 10rem;
+  }
+/* appointments starts here */
+
+/* appointments_box ends here */
 
 /* philosophy and apps ends here */
 
 /* footer css starts here */
+
+  footer {
+    background-color: azure;
+    width: 960px;
+  }
+
+  footer img {
+    padding: 4rem 1rem 4rem 4rem;
+  }
+
 /* footer css ends here */
 
 /* body css ends here */
