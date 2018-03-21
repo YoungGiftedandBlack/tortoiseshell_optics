@@ -415,6 +415,7 @@
     .banner {
       height: 17rem;
       background-size: auto 17rem;
+      background-position: 20%;
     }
 
     .banner_box_1 {
@@ -432,6 +433,11 @@
 
     .banner_box_2 span {
       padding: 0rem;
+    }
+
+    .just_look {
+      padding: 0rem;
+      margin: 0rem;
     }
 
     .just_look span {
@@ -502,6 +508,14 @@
     footer {
       position: absolute;
       top: 67.62rem;
+      justify-content: center;
+      border: 0rem;
+      padding: 0rem;
+      margin: 0rem;
+    }
+
+    footer img {
+      padding: 4rem;
     }
   }
 
