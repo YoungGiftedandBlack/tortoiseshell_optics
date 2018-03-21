@@ -362,11 +362,78 @@
 
 /* body css ends here */
 
+/* >1024px css starts here */
 
-/* < px but > px starts here */
-/* < px but > px ends here */
+@media only screen and (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
 
-/* < px starts here */
-/* < px ends here */
 /**/
-/**/
+
+/* <1024px but >471px css starts here */
+
+  @media only screen and (max-width: 1024px) and (min-width: 471px) {
+  .site_container, header, .banner_box_1, .banner_box_2, .pictogram, .phil_and_app, footer {
+    width: 100%;
+  }
+
+  .banner {
+    background-size: auto 22rem;
+    height: 22rem;
+  }
+
+  .banner_box_1 {
+  position: relative;
+  padding-top: 0rem;
+  }
+
+  .banner_box_2 {
+    position: absolute;
+    top: 8rem;
+    right: 2rem;
+  }
+
+  .banner_box_2 span {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+/* <1024px but >471px css ends here */
+
+/* <470px css starts here */
+
+  @media only screen and (max-width: 470px) {
+    .site_container, header, .banner_box_1, .banner_box_2, .pictogram, .phil_and_app, footer {
+      width: 100%;
+    }
+
+    .banner_box_1 {
+    position: relative;
+    padding-top: 0rem;
+    }
+
+    .banner_box_2 {
+      position: absolute;
+      top: 8rem;
+      right: 2rem;
+    }
+
+    .just_look span {
+    font-size: 1.33rem;
+    text-align: center;
+    padding: 0.75rem 0rem;
+    }
+
+    .nav_items {
+      display: none;
+    }
+  }
+
+/* <470px css ends here */
