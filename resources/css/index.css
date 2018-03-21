@@ -82,6 +82,7 @@
   }
 
 /* site_container css starts here */
+
   .site_container {
     display: flex;
     flex-direction: column;
@@ -407,8 +408,13 @@
 /* <470px css starts here */
 
   @media only screen and (max-width: 470px) {
-    .site_container, header, .banner_box_1, .banner_box_2, .pictogram, .phil_and_app, footer {
+    .site_container, header, .banner_box_1, .banner_box_2, .pictogram, .phil_and_app, footer, .philosophy_box, .picto_box {
       width: 100%;
+    }
+
+    .banner {
+      height: 17rem;
+      background-size: auto 17rem;
     }
 
     .banner_box_1 {
@@ -418,18 +424,84 @@
 
     .banner_box_2 {
       position: absolute;
-      top: 8rem;
-      right: 2rem;
+      top: 9rem;
+      right: 0rem;
+      justify-content: center;
+      background-color: white;
+    }
+
+    .banner_box_2 span {
+      padding: 0rem;
     }
 
     .just_look span {
-    font-size: 1.33rem;
+    font-size: 1rem;
     text-align: center;
-    padding: 0.75rem 0rem;
+    padding: 1rem 0rem;
     }
 
     .nav_items {
       display: none;
+    }
+
+    .picto_box {
+      flex-direction: column;
+      position: absolute;
+      top: 17rem;
+      padding: 3.77rem 0rem;
+    }
+
+    .picto_box span {
+      font-size: 0.77rem;
+    }
+
+    .phil_and_app {
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 45.62rem;
+    }
+
+    .philosophy_box {
+      padding: 0rem;
+    }
+
+    .appointments_box {
+      width: 100%;
+      padding: 0rem;
+    }
+
+    .apps_title, .phil_title {
+      width: 100%;
+      background-color: cadetblue;
+      justify-content: center;
+    }
+
+    .phil_title span, .apps_title span {
+      padding: 1rem 0rem;
+    }
+
+    .ruler_box {
+      padding-top: 1.54rem;
+      height: 5rem;
+    }
+
+    .truck_box {
+      padding-top: 1.54rem;
+      height: 5rem;
+    }
+
+    .philosophy span, .appointments span {
+      font-size: 0.77rem;
+    }
+
+    .philosophy, .appointments {
+      padding-bottom: 4rem;
+    }
+
+    footer {
+      position: absolute;
+      top: 67.62rem;
     }
   }
 
