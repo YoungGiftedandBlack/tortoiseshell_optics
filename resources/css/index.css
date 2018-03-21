@@ -55,13 +55,10 @@
     color: grey;
   }
 
-  .appointments span, .philosophy span {
-    padding: 0.5rem 1.25rem;
-  }
-
   .picto_box span {
     color: grey;
     text-align: center;
+    line-height: normal;
   }
 
   .phil_title span, .apps_title span {
@@ -70,8 +67,8 @@
   }
 
   .philosophy span, .appointments span {
-    text-align: left;
     color: grey;
+    line-height: normal;
   }
 
 /* text css ends here */
